@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>M.D.S DANCE STATION | Transforming Passion Into Performance Since 2013</title>
+  <meta name="description" content="Join M.D.S DANCE STATION, founded by Minku Kumar. Professional dance training in Hip Hop, Bollywood, Kathak, and more since 2013 in Patna." />
+  <meta name="keywords" content="Dance Academy, Dance Station, M.D.S, Minku Kumar, Hip Hop, Bollywood, Kathak, Zumba, Patna, Dance Classes, Best Dance Studio, Bihar" />
+  <link rel="canonical" href="https://mdsdancestation.com/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mdsdancestation.com/" />
+  <meta property="og:title" content="M.D.S DANCE STATION | Transforming Passion Into Performance" />
+  <meta property="og:description" content="Professional dance training in Hip Hop, Bollywood, Kathak, and more since 2013 in Patna." />
+  <meta property="og:image" content="https://mdsdancestation.com/assets/icon.png" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://mdsdancestation.com/" />
+  <meta property="twitter:title" content="M.D.S DANCE STATION | Transforming Passion Into Performance" />
+  <meta property="twitter:description" content="Professional dance training in Hip Hop, Bollywood, Kathak, and more since 2013 in Patna." />
+  <meta property="twitter:image" content="https://mdsdancestation.com/assets/icon.png" />
+  <link rel="icon" href="assets/icon.png" type="image/x-icon" />
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&amp;family=Manrope:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Icons -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Scripts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="assets/config.js"></script>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+  <!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+    <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+      <a href="index.html"
+        class="flex items-center gap-2 text-xl font-bold tracking-tighter text-zinc-900 dark:text-white font-headline uppercase">
+        <img src="assets/icon.png" alt="M.D.S DANCE STATION Logo" class="h-8 w-8 object-contain" />
+        M.D.S DANCE STATION
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 font-headline font-medium text-sm tracking-wide">
+        <a class="text-yellow-600 font-bold border-b-2 border-yellow-400 pb-1" href="#home">Home</a>
+        <a class="text-zinc-600 hover:text-zinc-900 transition-colors" href="/about.html">About</a>
+        <a class="text-zinc-600 hover:text-zinc-900 transition-colors" href="/courses.html">Courses</a>
+        <a class="text-zinc-600 hover:text-zinc-900 transition-colors" href="/gallery.html">Gallery</a>
+        <a class="text-zinc-600 hover:text-zinc-900 transition-colors" href="/students.html">Students</a>
+        <a class="text-zinc-600 hover:text-zinc-900 transition-colors" href="/contact.html">Contact</a>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden md:flex items-center space-x-4">
+          <a class="hover:scale-105 transition-transform duration-200 text-yellow-600" href="tel:+1234567890">
+            <span class="material-symbols-outlined" data-icon="call">call</span>
+          </a>
+          <a class="hover:scale-105 transition-transform duration-200 text-yellow-600" href="#">
+            <span class="material-symbols-outlined" data-icon="chat">chat</span>
+          </a>
+        </div>
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-menu-btn md:hidden" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div class="mobile-nav-brand">
+      <img src="assets/icon.png" alt="Logo" />
+      <span>M.D.S Dance Station</span>
+    </div>
+    <a href="index.html" class="active-link">
+      <span class="material-symbols-outlined">home</span> Home
+    </a>
+    <a href="about.html">
+      <span class="material-symbols-outlined">info</span> About
+    </a>
+    <a href="courses.html">
+      <span class="material-symbols-outlined">school</span> Courses
+    </a>
+    <a href="gallery.html">
+      <span class="material-symbols-outlined">photo_library</span> Gallery
+    </a>
+    <a href="students.html">
+      <span class="material-symbols-outlined">groups</span> Students
+    </a>
+    <a href="contact.html">
+      <span class="material-symbols-outlined">mail</span> Contact
+    </a>
+    <div class="mobile-nav-actions">
+      <a href="tel:+1234567890" class="call-btn">
+        <span class="material-symbols-outlined">call</span> Call
+      </a>
+      <a href="#" class="chat-btn">
+        <span class="material-symbols-outlined">chat</span> Chat
+      </a>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      const btn = document.getElementById('mobileMenuBtn');
+      const overlay = document.getElementById('mobileNavOverlay');
+      const drawer = document.getElementById('mobileNavDrawer');
+
+      function toggleMenu() {
+        const isOpen = drawer.classList.contains('active');
+        btn.classList.toggle('active', !isOpen);
+        drawer.classList.toggle('active', !isOpen);
+        overlay.classList.toggle('active', !isOpen);
+        document.body.classList.toggle('nav-open', !isOpen);
+      }
+
+      function closeMenu() {
+        btn.classList.remove('active');
+        drawer.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.classList.remove('nav-open');
+      }
+
+      btn.addEventListener('click', toggleMenu);
+      overlay.addEventListener('click', closeMenu);
+      drawer.querySelectorAll('a:not(.call-btn):not(.chat-btn)').forEach(link => {
+        link.addEventListener('click', closeMenu);
+      });
+    })();
+  </script>
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center pt-20 kinetic-gradient overflow-hidden" id="home">
+    <div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 z-10">
+        <span
+          class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">
+          ESTABLISHED 2013
+        </span>
+        <h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tight text-on-surface leading-[1.1] mb-8">
+          Transforming <span class="text-primary">Passion</span> Into Performance
+        </h1>
+        <p class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+          Step onto the stage of excellence. Join the premier dance academy where movement meets soul and discipline
+          crafts champions.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <button
+            class="bg-primary-container text-on-primary-fixed px-8 py-4 rounded-md font-bold hover:scale-105 transition-all shadow-lg"
+            onclick="window.location.href='./contact.html'">
+            Join Now
+          </button>
+          <button
+            class="border border-outline-variant text-on-surface px-8 py-4 rounded-md font-bold hover:bg-surface-container-low transition-all"
+            onclick="window.location.href='./courses.html'">
+            Explore Courses
+          </button>
+        </div>
+      </div>
+      <div class="md:col-span-5 relative flex justify-center items-center h-[600px]">
+        <!-- Premium Shuffle Gallery Container -->
+        <div id="shuffle-gallery" class="relative w-full max-w-[400px] aspect-[4/5]">
+          <!-- Images will be layered here -->
+          <div
+            class="shuffle-item absolute inset-0 rounded-2xl overflow-hidden shadow-2xl transition-all duration-1000 transform active-item">
+            <img class="w-full h-full object-cover" src="assets/indexpageimage/1.png" alt="Dance Image 1" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+          </div>
+          <div
+            class="shuffle-item absolute inset-0 rounded-2xl overflow-hidden shadow-2xl transition-all duration-1000 transform translate-x-4 translate-y-4 -rotate-3 z-[-1] opacity-80">
+            <img class="w-full h-full object-cover" src="assets/indexpageimage/2.png" alt="Dance Image 2" />
+          </div>
+          <div
+            class="shuffle-item absolute inset-0 rounded-2xl overflow-hidden shadow-2xl transition-all duration-1000 transform translate-x-8 translate-y-8 rotate-3 z-[-2] opacity-60">
+            <img class="w-full h-full object-cover" src="assets/indexpageimage/3.png" alt="Dance Image 3" />
+          </div>
+          <div
+            class="shuffle-item absolute inset-0 rounded-2xl overflow-hidden shadow-2xl transition-all duration-1000 transform translate-x-12 translate-y-12 -rotate-6 z-[-3] opacity-40">
+            <img class="w-full h-full object-cover" src="assets/indexpageimage/4.png" alt="Dance Image 4" />
+          </div>
+          <div
+            class="shuffle-item absolute inset-0 rounded-2xl overflow-hidden shadow-2xl transition-all duration-1000 transform translate-x-16 translate-y-16 rotate-6 z-[-4] opacity-20">
+            <img class="w-full h-full object-cover" src="assets/indexpageimage/5.png" alt="Dance Image 5" />
+          </div>
+        </div>
+
+        <!-- Decorative Elements for "Dancing Vibes" -->
+        <div class="absolute top-1/2 -right-8 w-64 h-64 bg-primary/20 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-yellow-500/10 rounded-full blur-2xl -z-10 animate-bounce"
+          style="animation-duration: 4s;"></div>
+
+        <style>
+          .shuffle-item {
+            cursor: pointer;
+            will-change: transform, opacity, z-index;
+          }
+
+          /* This class will be swapped via JS for the 'Premium' shuffle feel */
+          .shuffle-item.out {
+            transform: translateX(120%) translateY(-20%) rotate(15deg) scale(0.8) !important;
+            opacity: 0 !important;
+            z-index: 10 !important;
+          }
+        </style>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('shuffle-gallery');
+            const items = Array.from(container.querySelectorAll('.shuffle-item'));
+            let currentIndex = 0;
+
+            function shuffle() {
+              const current = items[currentIndex];
+
+              // 1. Move current item 'out' with a premium flying animation
+              current.classList.add('out');
+
+              setTimeout(() => {
+                // 2. Move it to the bottom of the stack behind others
+                current.classList.remove('out');
+
+                // 3. Update all items' positions
+                currentIndex = (currentIndex + 1) % items.length;
+
+                items.forEach((item, index) => {
+                  const relativeIndex = (index - currentIndex + items.length) % items.length;
+
+                  // Premium Stacking Logic
+                  if (relativeIndex === 0) {
+                    // Front card
+                    item.style.transform = 'translateX(0) translateY(0) rotate(0) scale(1)';
+                    item.style.opacity = '1';
+                    item.style.zIndex = '5';
+                  } else {
+                    // Background cards
+                    const offset = relativeIndex * 20; // 20px offset
+                    const rot = (relativeIndex % 2 === 0 ? 3 : -3) * relativeIndex;
+                    const scale = 1 - (relativeIndex * 0.05);
+                    const opacity = 1 - (relativeIndex * 0.2);
+
+                    item.style.transform = `translateX(${offset}px) translateY(${offset}px) rotate(${rot}deg) scale(${scale})`;
+                    item.style.opacity = opacity.toString();
+                    item.style.zIndex = (5 - relativeIndex).toString();
+                  }
+                });
+              }, 600); // Duration matches CSS transition
+            }
+
+            // Shuffle every 3 seconds for dynamic dancing vibes
+            setInterval(shuffle, 2500);
+
+            // Also shuffle on click for interactivity
+            container.addEventListener('click', shuffle);
+          });
+        </script>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section class="py-24 bg-surface-container-low" id="about">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+        <div class="order-2 md:order-1">
+          <div class="rounded-xl overflow-hidden shadow-sm h-[500px]">
+            <iframe allowfullscreen="" height="100%" loading="lazy"
+              src="https://www.google.com/maps?q=25.6008138,85.1466203&output=embed" style="border:0;"
+              width="100%"></iframe>
+          </div>
+        </div>
+        <div class="order-1 md:order-2">
+          <h2 class="font-headline text-4xl font-extrabold mb-8">Crafting Motion for Over a Decade</h2>
+          <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+            Founded by the visionary choreographer <span class="font-bold text-on-surface">Minku Kumar</span>, M.D.S
+            DANCE STATION has been the heartbeat of the local dance community for over 12 years.
+          </p>
+          <p class="text-on-surface-variant mb-8 leading-relaxed">
+            We believe dance is not just steps; it's a language of the heart. Our studio provides a professional
+            environment for students of all ages to explore their creative potential through rigorous training and
+            passionate expression.
+          </p>
+          <div class="grid grid-cols-2 gap-8 mb-10">
+            <div class="p-6 bg-surface-container-lowest rounded-xl">
+              <h4 class="font-headline font-bold text-primary mb-2">Opening Hours</h4>
+              <p class="text-sm">8:00 AM - 8:00 PM</p>
+              <p class="text-xs text-on-surface-variant">Monday to Sunday</p>
+            </div>
+            <div class="p-6 bg-surface-container-lowest rounded-xl">
+              <h4 class="font-headline font-bold text-primary mb-2">Expertise</h4>
+              <p class="text-sm">30+ Years Industry</p>
+              <p class="text-xs text-on-surface-variant">Professional Training</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Achievements Section -->
+  <section class="py-20 bg-on-surface text-surface">
+    <div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+      <div>
+        <div class="text-4xl md:text-5xl font-headline font-extrabold text-primary-container mb-2">600+</div>
+        <div class="text-sm uppercase tracking-widest font-medium opacity-70">Students Trained</div>
+      </div>
+      <div>
+        <div class="text-4xl md:text-5xl font-headline font-extrabold text-primary-container mb-2">100+</div>
+        <div class="text-sm uppercase tracking-widest font-medium opacity-70">Performances</div>
+      </div>
+      <div>
+        <div class="text-4xl md:text-5xl font-headline font-extrabold text-primary-container mb-2">12+</div>
+        <div class="text-sm uppercase tracking-widest font-medium opacity-70">Years Experience</div>
+      </div>
+      <div>
+        <div class="text-4xl md:text-5xl font-headline font-extrabold text-primary-container mb-2">30+</div>
+        <div class="text-sm uppercase tracking-widest font-medium opacity-70">Active Batches</div>
+      </div>
+    </div>
+  </section>
+  <!-- Courses Section -->
+  <section class="py-24 bg-surface" id="courses">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div class="max-w-2xl">
+          <h2 class="font-headline text-4xl font-extrabold mb-4">Our Dance Disciplines</h2>
+          <p class="text-on-surface-variant">From traditional roots to modern street styles, discover a syllabus
+            tailored for every aspiring artist.</p>
+        </div>
+        <div class="text-primary font-bold hover:underline cursor-pointer">View Schedule</div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Course Cards -->
+        <div class="group bg-surface-container-lowest p-1 rounded-xl hover:scale-[1.02] transition-all duration-300">
+          <div class="aspect-square rounded-lg overflow-hidden relative">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              data-alt="dynamic hip hop dancer in streetwear performing a power move in an urban dance studio with neon accents"
+              src="assets/images/28.png" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-4 font-headline text-xl font-bold text-white">Hip Hop</h3>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-1 rounded-xl hover:scale-[1.02] transition-all duration-300">
+          <div class="aspect-square rounded-lg overflow-hidden relative">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              data-alt="bollywood dancers in vibrant colorful traditional costumes performing a synchronized group routine with joyful expressions"
+              src="assets/images/29.png" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-4 font-headline text-xl font-bold text-white">Bollywood</h3>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-1 rounded-xl hover:scale-[1.02] transition-all duration-300">
+          <div class="aspect-square rounded-lg overflow-hidden relative">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              data-alt="classical kathak dancer showing intricate hand mudras and footwork with ghungroo bells in a traditional setting"
+              src="assets/images/30.png" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-4 font-headline text-xl font-bold text-white">Kathak</h3>
+          </div>
+        </div>
+        <div class="group bg-surface-container-lowest p-1 rounded-xl hover:scale-[1.02] transition-all duration-300">
+          <div class="aspect-square rounded-lg overflow-hidden relative">
+            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              data-alt="energetic zumba class with diverse participants following a leader in a bright modern fitness studio"
+              src="assets/images/31.png" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <h3 class="absolute bottom-4 left-4 font-headline text-xl font-bold text-white">Zumba</h3>
+          </div>
+        </div>
+        <!-- Additional Course Labels -->
+        <div class="sm:col-span-2 lg:col-span-4 grid grid-cols-2 md:grid-cols-5 gap-4 mt-4">
+          <div
+            class="bg-surface-container-low px-6 py-4 rounded-lg text-center font-bold text-sm uppercase tracking-widest hover:bg-primary-container transition-colors">
+            Contemporary</div>
+          <div
+            class="bg-surface-container-low px-6 py-4 rounded-lg text-center font-bold text-sm uppercase tracking-widest hover:bg-primary-container transition-colors">
+            BollyHop</div>
+          <div
+            class="bg-surface-container-low px-6 py-4 rounded-lg text-center font-bold text-sm uppercase tracking-widest hover:bg-primary-container transition-colors">
+            Karate</div>
+          <div
+            class="bg-surface-container-low px-6 py-4 rounded-lg text-center font-bold text-sm uppercase tracking-widest hover:bg-primary-container transition-colors">
+            Acting</div>
+          <div
+            class="bg-surface-container-low px-6 py-4 rounded-lg text-center font-bold text-sm uppercase tracking-widest hover:bg-primary-container transition-colors">
+            Music</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Instructor Section -->
+  <section class="py-24 bg-surface-container-low relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="flex flex-col md:flex-row items-center gap-16">
+        <div class="w-full md:w-1/2">
+          <div class="relative">
+            <div class="absolute -top-4 -left-4 w-full h-full border-2 border-primary-container rounded-xl"></div>
+            <img class="rounded-xl shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700"
+              data-alt="portrait of professional dance instructor Minku Kumar looking confident in a minimalist studio background"
+              src="assets/images/32.png" />
+          </div>
+        </div>
+        <div class="w-full md:w-1/2">
+          <h4 class="text-primary font-bold uppercase tracking-[0.2em] text-sm mb-4">The Founder</h4>
+          <h2 class="font-headline text-5xl font-extrabold mb-6">Minku Kumar</h2>
+          <p class="text-lg text-on-surface-variant mb-8 italic">
+            "Dance is the hidden language of the soul. My mission is to give every student the vocabulary to express
+            their truth through movement."
+          </p>
+          <ul class="space-y-4 mb-10">
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+              <span>30+ Years Professional Choreography</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+              <span>National Level Performer &amp; Mentor</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary" data-icon="check_circle">check_circle</span>
+              <span>Specialist in Multi-Genre Fusion</span>
+            </li>
+          </ul>
+          <button class="bg-on-surface text-surface px-8 py-4 rounded-md font-bold hover:scale-105 transition-all">Book
+            Private Session</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Students Grid -->
+  <section class="py-24 bg-surface" id="students">
+    <div class="max-w-7xl mx-auto px-8">
+      <h2 class="font-headline text-4xl font-extrabold text-center mb-16">Our Shining Stars</h2>
+      <div class="grid grid-cols-3 md:grid-cols-6 gap-4">
+        <!-- Repeated pattern for students -->
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Puja smiling" src="assets/images/33.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Shubham Singh</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Sherya in costume" src="assets/images/34.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Sherya</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Rajeev in dance pose" src="assets/images/35.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Manish K.</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Alia" src="assets/images/36.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Alia</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Manish" src="assets/images/37.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Manish</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Vishal" src="assets/images/38.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Vishal</span>
+          </div>
+        </div>
+        <!-- Row 2 (More students) -->
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Sanjana" src="assets/images/39.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Sanjana</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Shubham" src="assets/images/40.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Shubham</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Pragya" src="assets/images/41.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Pragya</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Sharad" src="assets/images/42.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Sharad</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Akshika" src="assets/images/43.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Akshika</span>
+          </div>
+        </div>
+        <div class="group relative aspect-square rounded-lg overflow-hidden">
+          <img class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            data-alt="close-up portrait of student dancer Ayush" src="assets/images/44.png" />
+          <div
+            class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity">
+            <span class="text-white font-bold text-xs uppercase tracking-tighter">Ayush</span>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-12 text-on-surface-variant italic">And many more talented souls part of our family.</p>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-24 bg-surface-container-high" id="contact">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="bg-surface-container-lowest rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+        <!-- Form Area -->
+        <div class="lg:w-1/2 p-12">
+          <h2 class="font-headline text-4xl font-extrabold mb-8">Get In Touch</h2>
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-widest mb-2">Name</label>
+                <input
+                  class="w-full bg-surface-container border-none focus:ring-2 focus:ring-primary rounded-md px-4 py-3"
+                  placeholder="John Doe" type="text" />
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-widest mb-2">Phone</label>
+                <input
+                  class="w-full bg-surface-container border-none focus:ring-2 focus:ring-primary rounded-md px-4 py-3"
+                  placeholder="+91 98765 43210" type="tel" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-widest mb-2">Email</label>
+              <input
+                class="w-full bg-surface-container border-none focus:ring-2 focus:ring-primary rounded-md px-4 py-3"
+                placeholder="minkukumar01@gmail.com" type="email" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-widest mb-2">Message</label>
+              <textarea
+                class="w-full bg-surface-container border-none focus:ring-2 focus:ring-primary rounded-md px-4 py-3"
+                placeholder="How can we help you dance?" rows="4"></textarea>
+            </div>
+            <button
+              class="w-full bg-primary-container text-on-primary-fixed font-bold py-4 rounded-md hover:shadow-xl transition-all">Send
+              Message</button>
+          </form>
+        </div>
+        <!-- Info Area -->
+        <div class="lg:w-1/2 bg-on-surface p-12 text-surface flex flex-col justify-between">
+          <div>
+            <h3 class="font-headline text-2xl font-bold mb-8">Contact Information</h3>
+            <div class="space-y-8">
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary-container"
+                  data-icon="location_on">location_on</span>
+                <div>
+                  <p class="font-bold">Visit the Studio</p>
+                  <p class="opacity-70">MIG-6, COLONY MORE, OPPOSITE BIBA SHOWROOM REASON 2 SMILE DENTAL, Kankarbagh,
+                    Mithapur, Patna, Bihar 800020</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary-container" data-icon="mail">mail</span>
+                <div>
+                  <p class="font-bold">Email Us</p>
+                  <p class="opacity-70">minkukumar01@gmail.com</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <span class="material-symbols-outlined text-primary-container" data-icon="phone">phone</span>
+                <div>
+                  <p class="font-bold">Call Now</p>
+                  <p class="opacity-70">+91 9308694225 / +91 8002142257</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 pt-12 border-t border-white/10">
+            <div class="flex gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-colors">
+                <span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span>
+              </div>
+              <div
+                class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary-container hover:text-on-primary transition-colors">
+                <span class="material-symbols-outlined" data-icon="camera">camera</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-zinc-50 dark:bg-zinc-950 w-full py-12 px-8 border-t border-zinc-200 dark:border-zinc-800">
+    <div
+      class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto font-['Be_Vietnam_Pro'] text-sm leading-relaxed">
+      <div class="col-span-1 md:col-span-1">
+        <span class="text-lg font-bold text-zinc-900 dark:text-white mb-4 block">M.D.S DANCE STATION</span>
+        <p class="text-zinc-500 mb-6">Pioneering dance education and performance arts excellence since 2013 under the
+          leadership of Minku Kumar.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-widest text-xs">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#about">Our History</a></li>
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#courses">Dance Courses</a></li>
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#gallery">Performance Gallery</a></li>
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#contact">Join Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-widest text-xs">Support</h4>
+        <ul class="space-y-2">
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#">Privacy Policy</a></li>
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#">Terms of Service</a></li>
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#">FAQ</a></li>
+          <li><a
+              class="text-zinc-500 hover:text-yellow-600 transition-colors hover:underline decoration-yellow-400 underline-offset-4"
+              href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-4 uppercase tracking-widest text-xs">Newsletter</h4>
+        <p class="text-zinc-500 mb-4">Stay updated with latest performances and batches.</p>
+        <div class="flex gap-2">
+          <input class="bg-surface-container border-none rounded-md px-4 py-2 text-xs w-full" placeholder="Email"
+            type="email" />
+          <button class="bg-primary text-on-primary px-4 py-2 rounded-md"><span
+              class="material-symbols-outlined text-sm" data-icon="send">send</span></button>
+        </div>
+      </div>
+    </div>
+    <div
+      class="max-w-7xl mx-auto mt-12 pt-8 border-t border-zinc-200 dark:border-zinc-800 text-center text-zinc-400 text-xs uppercase tracking-widest">
+      © 2024 M.D.S DANCE STATION. All rights reserved.
+    </div>
+  </footer>
+  <!-- Side Navigation / Contact FAB -->
+  <div class="fixed bottom-8 right-8 flex flex-col items-end space-y-4 z-50">
+    <div class="group flex items-center">
+      <span
+        class="bg-on-surface text-surface px-4 py-2 rounded-lg text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity mr-3 shadow-xl">WhatsApp</span>
+      <a class="bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 p-4 rounded-full shadow-lg hover:scale-110 hover:-translate-y-1 transition-all"
+        href="https://wa.me/919308694225 " target="_blank">
+        <span class="material-symbols-outlined" data-icon="chat">chat</span>
+      </a>
+    </div>
+    <div class="group flex items-center">
+      <span
+        class="bg-on-surface text-surface px-4 py-2 rounded-lg text-[10px] font-bold uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity mr-3 shadow-xl">Call
+        Us</span>
+      <a class="bg-yellow-400 text-zinc-900 p-4 rounded-full shadow-lg hover:scale-110 hover:-translate-y-1 transition-all"
+        href="tel:+919308694225" target="_blank">
+        <span class="material-symbols-outlined" data-icon="call">call</span>
+      </a>
+    </div>
+  </div>
+  <!-- Map Logic Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "M.D.S DANCE STATION",
+      "image": "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad",
+      "founder": "Minku Kumar",
+      "url": "https://mdsdancestation.com",
+      "telephone": "+91 9308694225",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "MIG-6, COLONY MORE, OPPOSITE BIBA SHOWROOM REASON 2 SMILE DENTAL, Kankarbagh",
+        "addressLocality": "Patna",
+        "addressRegion": "Bihar",
+        "postalCode": "800020",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "20:00"
+      }
+    }
+    </script>
+</body>
+
+</html>
